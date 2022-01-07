@@ -2,8 +2,12 @@ import os
 import telebot
 import time
 
-API_KEY = os.getenv('API_key')
-bot = telebot.TeleBot('5021080814:AAEMKb2DiQAWL4bb3x7vRnNP8Zq7QvbqKOc')
+TOKEN = None
+
+with open("token.txt") as f:
+    TOKEN = f.read().strip()
+
+bot = telebot.TeleBot(TOKEN)
 stringHelp = 'Hi I am ARTesterBot! I can help you take your ART test, simply press /start to begin.'
 
 
