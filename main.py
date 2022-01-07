@@ -103,7 +103,7 @@ def test(message):
     bot.send_message(message.chat.id, 'Wait for 15 mins before checking the results on the test cartridge.' +
                      'Please keep the cartridge on flat ground for the whole duration. The timer will start now.')
     for x in range(1, 16):
-        time.sleep(1)
+        time.sleep(60)
         msg = str(x) + "minute(s) have passed."
         bot.send_message(message.chat.id, msg)
     bot.send_message(message.chat.id, 'Click on /Step12 to proceed.')
