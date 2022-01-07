@@ -1,4 +1,3 @@
-import os
 import telebot
 import time
 
@@ -27,11 +26,11 @@ def test(message):
 # disclaimer before doing art test
 @bot.message_handler(commands=['disclaimer'])
 def disclaimer(message):
-   bot.send_message(message.chat.id, 'Do not attempt the ART test if\n' +
-                    '1) You have a nosebleed for the past 24hrs\n' +
-                    '2) Nasal surgery in the last 4 weeks\n' +
-                    '3) Facial Injury in the last weeks\n' +
-                    'Once you are sure, click or type /Step1 to proceed.')
+    bot.send_message(message.chat.id, 'Do not attempt the ART test if\n' +
+                     '1) You have a nosebleed for the past 24hrs\n' +
+                     '2) Nasal surgery in the last 4 weeks\n' +
+                     '3) Facial Injury in the last weeks\n' +
+                     'Once you are sure, click or type /Step1 to proceed.')
 
 
 # Step 1
